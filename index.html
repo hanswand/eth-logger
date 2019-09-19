@@ -7,7 +7,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Fluree Ethereum Block Igloo</title>
-  <!-- ok, not yet but coming soon.... -->
 
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
@@ -26,16 +25,17 @@
 </head>
 <body>
     <div class="container-fluid">
+      <div>
+        <img src="Igloo.jpg" alt="Fluree Igloo">
+      </div>
         <div class="jumbotron">
             <h1> Ethereum Block Explorer</h1>
-            <h2>An Igloo, secured by Fluree</h2> 
-<!-- ok, not yet but coming soon.... -->
+            <h2>An Igloo, secured by Fluree</h2>
+            <a href="http://www.onlinewebfonts.com">oNline Web Fonts</a>
             </p>
         </div>
 
-        <div>
-          <!-- insert fluree image here -->
-        </div>
+        
 
         <div class="card bg-primary text-white mb-3">
             <div class="card-body"><h2 id="gasPrice"><i class="fas fa-gas-pump">&nbsp;&nbsp;</i>Current Gas Price (Gwei): &nbsp;</h2></div>
@@ -48,7 +48,7 @@
                     <th>Hash</th>
                     <th>Timestamp</th>
                     <th>Miner</th>
-                    <th>Transactions</th>
+                    <th>Tx Count</th>
                 </tr>
             </thead>
         </table>
@@ -113,6 +113,9 @@
           var cell5 = row.insertCell(4);
           cell1.innerHTML = block.number;
           cell2.innerHTML = block.hash;
+          cell3.innerHTML = block.timestamp;
+          // time = moment.unix(block.timestamp);
+          // cell3 = time.toString(block.timestamp);
           cell3.innerHTML = block.timestamp;
           cell4.innerHTML = block.miner;
           cell5.innerHTML = block['transactions'].length;
