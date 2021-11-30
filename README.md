@@ -1,4 +1,4 @@
-# Fluree Ethereum Logger
+# Ethereum Logger
 
 Returns last 10 blocks and the price of gas
 
@@ -9,7 +9,7 @@ ACTIONS:
     * Bloq: https://www.bloq.com/
     * Bitcoin Dev Network: https://bitcoindev.network/bitcoin-analytics-using-google-bigquery/
 
-- add hooks to Fluree
+- add hooks to graph db
 
 Other historical data sources:
 
@@ -20,10 +20,3 @@ Other:
 https://blocksplain.com/2018/02/22/blockchain-size/
 
 Need to better understand UTXO process
-
-Next Phase 
-
-- SmartContract ownership in Fluree
-- Graph relationships galore
-
-
